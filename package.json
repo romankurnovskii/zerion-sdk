@@ -1,7 +1,7 @@
 {
   "name": "zerion",
   "version": "1.0.0",
-  "description": "DESCRIPTION",
+  "description": "A TypeScript SDK for the Zerion API, providing access to rich web3 wallet data and analytics.",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -62,16 +62,23 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "homepage": "https://github.com/romankurnovskii/PACKAGE_NAME#readme",
+  "homepage": "https://github.com/romankurnovskii/zerion-sdk#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romankurnovskii/PACKAGE_NAME.git"
+    "url": "git+https://github.com/romankurnovskii/zerion-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/romankurnovskii/PACKAGE_NAME/issues"
+    "url": "https://github.com/romankurnovskii/zerion-sdk/issues"
   },
   "keywords": [
-    "npm-module"
+    "zerion",
+    "web3",
+    "defi",
+    "crypto",
+    "blockchain",
+    "sdk",
+    "typescript",
+    "api"
   ],
   "author": {
     "name": "Roman Kurnovskii",
