@@ -87,12 +87,12 @@ MIT © [Roman Kurnovskii](https://romankurnovskii.com)
 
 <!-- References -->
 
-[package-name]: PACKAGE_NAME
+[zerion]: PACKAGE_NAME
 [username]: USERNAME
 [repo-name]: REPO_NAME
 
-[npm-url]: https://www.npmjs.com/package/[package-name]
-[npm-version-image]: https://img.shields.io/npm/v/[package-name]?style=flat-square&color=blue
+[npm-url]: https://www.npmjs.com/package/[zerion]
+[npm-version-image]: https://img.shields.io/npm/v/[zerion]?style=flat-square&color=blue
 
 [license-url]: https://github.com/[username]/[repo-name]/blob/main/LICENSE
 [license-image]: https://img.shields.io/github/license/[username]/[repo-name]?style=flat-square&color=green

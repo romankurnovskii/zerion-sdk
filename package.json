@@ -1,12 +1,12 @@
 {
-  "name": "package-name",
+  "name": "zerion",
   "version": "1.0.0",
   "description": "DESCRIPTION",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
   "bin": {
-    "package-name": "./dist/bin.js"
+    "zerion": "./dist/bin.js"
   },
   "scripts": {
     "start": "tsx src/bin.ts",

@@ -4,7 +4,7 @@ import {hello} from './index.js';
 
 const program = new Command();
 
-program.name('package-name').description('DESCRIPTION').version('1.0.0');
+program.name('zerion').description('DESCRIPTION').version('1.0.0');
 
 program
   .option('-d, --dir <dirs...>', 'Directory to search for files', ['.'])
