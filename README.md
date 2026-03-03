@@ -6,7 +6,7 @@
   <h1 align="center">Zerion SDK</h1>
 
   <p align="center">
-    <strong>A comprehensive TypeScript SDK for the Zerion API, providing access to rich web3 wallet data and analytics.</strong>
+    <strong>A comprehensive TypeScript SDK for the <a href="https://zerion.io/api">Zerion API</a>, providing access to rich web3 wallet data and analytics.</strong>
   </p>
 
   <p align="center">

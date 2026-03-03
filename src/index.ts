@@ -554,6 +554,7 @@ export class ZerionAPI {
    * @param chartPeriod - Chart period (hour, day, week, month, year, max)
    * @param options - Additional options
    * @returns Portfolio balance chart data
+   * @see https://developers.zerion.io/reference/getwalletchart
    */
   async getWalletChart(
     address: string,
@@ -578,6 +579,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns Profit and Loss details
+   * @see https://developers.zerion.io/reference/getwalletpnl
    */
   async getWalletPNL(
     address: string,
@@ -601,6 +603,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns Portfolio overview
+   * @see https://developers.zerion.io/reference/getwalletportfolio
    */
   async getWalletPortfolio(
     address: string,
@@ -624,6 +627,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns List of wallet positions
+   * @see https://developers.zerion.io/reference/listwalletpositions
    */
   async listWalletPositions(
     address: string,
@@ -670,6 +674,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns List of wallet transactions
+   * @see https://developers.zerion.io/reference/listwallettransactions
    */
   async listWalletTransactions(
     address: string,
@@ -725,6 +730,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns List of wallet NFT positions
+   * @see https://developers.zerion.io/reference/listwalletnftpositions
    */
   async listWalletNFTPositions(
     address: string,
@@ -765,6 +771,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns List of wallet NFT collections
+   * @see https://developers.zerion.io/reference/listwalletnftcollections
    */
   async listWalletNFTCollections(
     address: string,
@@ -803,6 +810,7 @@ export class ZerionAPI {
    * @param address - Wallet address
    * @param options - Additional options
    * @returns NFT portfolio overview
+   * @see https://developers.zerion.io/reference/getwalletnftportfolio
    */
   async getWalletNFTPortfolio(
     address: string,
@@ -827,6 +835,7 @@ export class ZerionAPI {
    * Get list of fungible assets
    * @param options - Additional options
    * @returns List of fungible assets
+   * @see https://developers.zerion.io/reference/listfungibles
    */
   async listFungibles(
     options: {
@@ -866,6 +875,7 @@ export class ZerionAPI {
    * @param fungibleId - Unique fungible ID
    * @param options - Additional options
    * @returns Fungible asset details
+   * @see https://developers.zerion.io/reference/getfungiblebyid
    */
   async getFungibleById(
     fungibleId: string,
@@ -886,6 +896,7 @@ export class ZerionAPI {
    * @param chartPeriod - Chart period
    * @param options - Additional options
    * @returns Fungible price chart
+   * @see https://developers.zerion.io/reference/getfungiblechart
    */
   async getFungibleChart(
     fungibleId: string,
@@ -909,6 +920,7 @@ export class ZerionAPI {
    * Get list of all chains
    * @param options - Additional options
    * @returns List of chains
+   * @see https://developers.zerion.io/reference/listchains
    */
   async listChains(
     options: {
@@ -925,6 +937,7 @@ export class ZerionAPI {
    * @param chainId - Unique chain ID
    * @param options - Additional options
    * @returns Chain details
+   * @see https://developers.zerion.io/reference/getchainbyid
    */
   async getChainById(
     chainId: string,
@@ -945,6 +958,7 @@ export class ZerionAPI {
    * Get fungibles available for bridge/swap
    * @param options - Additional options
    * @returns List of fungibles available for swap
+   * @see https://developers.zerion.io/reference/getswapfungibles
    */
   async getSwapFungibles(
     options: {
@@ -965,6 +979,7 @@ export class ZerionAPI {
    * Get available swap offers
    * @param options - Swap options
    * @returns List of swap offers
+   * @see https://developers.zerion.io/reference/getswapoffers
    */
   async getSwapOffers(
     options: {
@@ -1013,6 +1028,7 @@ export class ZerionAPI {
    * Get list of all available gas prices
    * @param options - Additional options
    * @returns List of gas prices
+   * @see https://developers.zerion.io/reference/listgasprices
    */
   async listGasPrices(
     options: {
@@ -1036,6 +1052,7 @@ export class ZerionAPI {
    * Get list of NFTs
    * @param options - Additional options
    * @returns List of NFTs
+   * @see https://developers.zerion.io/reference/listnfts
    */
   async listNFTs(
     options: {
@@ -1073,6 +1090,7 @@ export class ZerionAPI {
    * @param nftId - NFT unique identifier
    * @param options - Additional options
    * @returns NFT details
+   * @see https://developers.zerion.io/reference/getnftbyid
    */
   async getNFTById(
     nftId: string,
