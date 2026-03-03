@@ -6,7 +6,7 @@
   "type": "module",
   "sideEffects": false,
   "bin": {
-    "zerion": "./dist/bin.js"
+    "zerion": "dist/bin.js"
   },
   "scripts": {
     "start": "tsx src/bin.ts",
