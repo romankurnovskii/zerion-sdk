@@ -1,0 +1,81 @@
+{
+  "name": "package-name",
+  "version": "1.0.0",
+  "description": "DESCRIPTION",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "bin": {
+    "package-name": "./dist/bin.js"
+  },
+  "scripts": {
+    "start": "tsx src/bin.ts",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint \"{src,tests,example/src}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"{src,tests,example/src}/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "format:check": "prettier --check \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "husky",
+    "release": "changeset publish"
+  },
+  "dependencies": {
+    "commander": "^14.0.3"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.2",
+    "@changesets/cli": "^2.29.8",
+    "@types/node": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.55.0",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "homepage": "https://github.com/romankurnovskii/PACKAGE_NAME#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romankurnovskii/PACKAGE_NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/romankurnovskii/PACKAGE_NAME/issues"
+  },
+  "keywords": [
+    "npm-module"
+  ],
+  "author": {
+    "name": "Roman Kurnovskii",
+    "email": "r.kurnovskii@gmail.com",
+    "url": "https://romankurnovskii.com"
+  }
+}
