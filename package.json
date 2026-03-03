@@ -1,6 +1,6 @@
 {
   "name": "zerion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript SDK for the Zerion API, providing access to rich web3 wallet data and analytics.",
   "license": "MIT",
   "type": "module",
