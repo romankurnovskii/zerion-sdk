@@ -61,7 +61,71 @@ const client = createZerionClient({ apiKey: 'your-api-key' });
 
 ```typescript
 const portfolio = await client.getWalletPortfolio('0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045');
-console.log(portfolio);
+console.dir(portfolio, { depth: null, colors: true });
+```
+
+```text
+{
+  links: {
+    self: 'https://api.zerion.io/v1/wallets/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045/portfolio?currency=usd&filter%5Bpositions%5D=only_simple'
+  },
+  data: {
+    type: 'portfolio',
+    id: '0xd8da6bf26964af9d7eed9e03e53415d37aa96045',
+    attributes: {
+      positions_distribution_by_type: {
+        wallet: 1380089.1673926937,
+        deposited: 0,
+        borrowed: 0,
+        locked: 0,
+        staked: 0
+      },
+      positions_distribution_by_chain: {
+        '0g': 0.005795038458999999,
+        abstract: 2.00493128,
+        ape: 0.45940373881025776,
+        arbitrum: 1002.4340336665684,
+        aurora: 4.054911379405513,
+        avalanche: 6.473193923961652,
+        base: 9253.568876498903,
+        berachain: 1.2889769425459379,
+        'binance-smart-chain': 15535.228649402487,
+        blast: 2.3428171557799726,
+        celo: 0.1542475544613521,
+        degen: 0.16105618365677402,
+        ethereum: 1351462.8211516857,
+        fantom: 1.0124296314225816,
+        'gravity-alpha': 0.0052583332763408396,
+        hyperevm: 0.19429912112837444,
+        ink: 0.3219281703,
+        katana: 0.020919221,
+        lens: 0.0001230153962421,
+        linea: 19.767910118160508,
+        mantle: 0.1938779954539404,
+        megaeth: 2.61347216462,
+        monad: 0.6914252346195,
+        optimism: 592.5831771213623,
+        plasma: 3.009890478713088,
+        polygon: 654.9415877832487,
+        'polygon-zkevm': 44.914584119007735,
+        scroll: 149.81111818001622,
+        soneium: 4.413756508847324,
+        sonic: 0.0001268201883,
+        unichain: 37.487719608206405,
+        world: 131.33850059088147,
+        xdai: 11.872909054641655,
+        zero: 0.0414242,
+        'zksync-era': 37.294364191445794,
+        zora: 1125.4385465803794
+      },
+      total: { positions: 1380088.9673926937 },
+      changes: {
+        absolute_1d: 7803.4353636475025,
+        percent_1d: 0.5686450847309643
+      }
+    }
+  }
+}
 ```
 
 ### Get Wallet Positions
