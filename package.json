@@ -23,7 +23,7 @@
     "release": "changeset publish"
   },
   "dependencies": {
-    "commander": "^15.0.0"
+    "commander": "^15.1.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",
